@@ -101,7 +101,6 @@ webencodings==0.5.1
 websockets==13.0
 yfinance==0.2.41
 yt-dlp==2024.8.6
-streamlit==1.25.0
 numpy
 pandas
 sqlite3
