@@ -103,4 +103,3 @@ yfinance==0.2.41
 yt-dlp==2024.8.6
 numpy
 pandas
-sqlite3
