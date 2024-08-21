@@ -104,5 +104,4 @@ yt-dlp==2024.8.6
 streamlit==1.25.0
 numpy
 pandas
-streamlit==1.25.0
 sqlite3
