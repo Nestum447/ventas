@@ -1,3 +1,4 @@
+import pandas as pd
 import streamlit as st
 from db import init_db, add_sale, get_sales
 from datetime import datetime
