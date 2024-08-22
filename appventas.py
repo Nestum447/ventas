@@ -24,7 +24,19 @@ with st.form("sales_form"):
         add_sale(date, product, quantity, price)
         st.success('Venta registrada correctamente!')
 
-st.subheader('Historial de Ventas')
+#st.subheader('Historial de Ventas')
+#sales = get_sales()
+#for sale in sales:
+ #   st.write(f"Fecha: {sale[0]}, Producto: {sale[1]}, Cantidad: {sale[2]}, Precio: ${sale[3]:.2f}")
+
 sales = get_sales()
-for sale in sales:
-    st.write(f"Fecha: {sale[0]}, Producto: {sale[1]}, Cantidad: {sale[2]}, Precio: ${sale[3]:.2f}")
+if sales:
+    # Crear un DataFrame con las ventas
+    df = pd.DataFrame(sales, columns=['Fecha', 'Producto', 'Cantidad', 'Precio'])
+    st.subheader('Historial de Ventas')
+    
+    # Mostrar el DataFrame como una tabla interactiva
+    st.dataframe(df)
+else:
+    st.warning('No se han registrado ventas aún.')
+    
