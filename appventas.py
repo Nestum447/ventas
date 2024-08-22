@@ -2,6 +2,12 @@ import streamlit as st
 from db import init_db, add_sale, get_sales
 from datetime import datetime
 
+
+import os
+db_path = 'ventas.db'  # Cambia esto si usas un nombre diferente para la base de datos
+st.write(f"La base de datos está guardada en: {os.path.abspath(db_path)}")
+
+
 init_db()
 
 st.title('Registro Diario de Ventas')
