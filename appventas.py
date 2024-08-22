@@ -10,7 +10,7 @@ import os
 
 init_db()
 
-st.title('Registro Diario de Ventas')
+st.title('Carpio Entreprises Registro Diario de Ventas')
 
 db_path = 'ventas.db'  # Cambia esto si usas un nombre diferente para la base de datos
 st.write(f"La base de datos está guardada en: {os.path.abspath(db_path)}")
